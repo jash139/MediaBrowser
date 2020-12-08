@@ -1,0 +1,47 @@
+/* Loading Screen */
+.loading-screen {
+    animation: fadeScreen 1.5s linear;
+    background: linear-gradient(135deg, #805BDC 0%, #5045FA 71%);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+@keyframes fadeScreen {
+    from  {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Loading Icon*/
+
+.loading-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Loading Icon Reel Animation */
+
+#reel-1,
+#reel-2 {
+    animation: wheel 1.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
