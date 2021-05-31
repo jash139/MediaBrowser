@@ -1,15 +1,25 @@
 # Media Browser
 
 Media Browser is an application to browse trending, popular, now playing and top rated movies and TV shows.
-This app uses React along with Redux.
+The application also allows to search for movies, TV shows, cast, etc.
+The app uses `React` with `Redux` for state management. `TMDB API` is used to fetch data.
 
 Hosted Website: [https://media-browser-ayush-acharya.netlify.app]
 
-## Installation and Setup Instructions
+## Build Setup
 
-Clone this repository. You will need `node` and `npm` installed globally on your machine.
+```bash
+# install dependencies
+$ npm install
 
-### `npm start`
+# serve at localhost:3000
+$ npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Create a `.env` file in the root directory of the project with following values.
+
+```dosini
+REACT_APP_TMDB_API_KEY=
+```
+
+All done!
