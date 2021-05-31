@@ -42,7 +42,7 @@ function CastCarousel(props) {
     useEffect(() => {
         props.getMovieCredits(props.mediaId);
         props.getTVCredits(props.mediaId);
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     function imageUrlString(profilePath) {
         const coverUrl = "https://image.tmdb.org/t/p/w500" + profilePath;

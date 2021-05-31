@@ -70,7 +70,7 @@ function PosterCarousel(props) {
     useEffect(() => {
         props.getTrendingMovies();
         props.getTrendingTVShows();
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     const handleStepChange = (step) => {
         setActiveStep(step);

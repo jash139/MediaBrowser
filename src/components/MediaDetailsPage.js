@@ -67,7 +67,7 @@ function MediaDetailsPage(props) {
         } else {
             props.getTVShowDetails(props.match.params.mediaId);
         }
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
 
 

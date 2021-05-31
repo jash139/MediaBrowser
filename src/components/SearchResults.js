@@ -26,7 +26,7 @@ function SearchResults(props) {
 
     useEffect(() => {
         props.getSearchResults(props.match.params.query);
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     const query = props.match.params.query;
     if (props.searchResults) {

@@ -56,7 +56,7 @@ function ItemsCarousel(props) {
         props.getAiringTodayTVShows();
         props.getPopularTVShows();
         props.getTopRatedTVShows();
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     if (props.mediaType.type === "MOVIE") {
         switch (props.type) {

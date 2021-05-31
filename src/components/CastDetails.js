@@ -1,4 +1,4 @@
-import { Grid, makeStyles, Paper, useMediaQuery, useTheme } from "@material-ui/core";
+import { Grid, makeStyles, useMediaQuery, useTheme } from "@material-ui/core";
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
@@ -48,7 +48,7 @@ function CastDetails(props) {
 
     useEffect(() => {
         props.getPersonDetails(props.match.params.id);
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     const personDetails = props.personDetails;
 
